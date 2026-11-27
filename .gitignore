@@ -1,0 +1,27 @@
+# ===== 安装包：415MB，绝不入库 =====
+# 发布走 GitHub Releases 附件（每个版本 APK 已在 apk/ 本地留存）
+apk/
+
+# ===== 真机验证产物：不入库 =====
+# UI测试/ 含真机截图与 UIAutomator dump，直接暴露真实课表画面（姓名/学号/教师/课程）
+# 仅本地留存，不入版本控制
+UI测试/
+
+# ===== Android 本地配置与签名密钥（绝不入库）=====
+local.properties
+*.jks
+*.keystore
+key.properties
+
+# ===== 构建产物 / 依赖缓存 =====
+**/build/
+**/.dart_tool/
+**/.flutter-plugins-dependencies
+**/.packages
+
+# ===== 编辑器 / 系统 =====
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
